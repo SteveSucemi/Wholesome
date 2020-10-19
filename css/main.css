@@ -324,7 +324,7 @@ input {
     display: block;
     position: relative;
     top: 100%;
-    animation-duration: 9s;
+    animation-duration: 6s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -393,6 +393,21 @@ input {
     z-index: 4;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+.viewer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 40px 40px 0 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.bigview {
+    width: 100%;
+    height: auto;
+    
 }
 
 .albums {
