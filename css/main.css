@@ -108,7 +108,7 @@ p {
     height: calc(100% - 49px);
     overflow-y: inherit;
     white-space: nowrap;
-    background: linear-gradient(to top, #00c3ff, #ffff1c);
+/*    background: linear-gradient(to top, #00c3ff, #ffff1c);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,9 +269,11 @@ input {
     stroke-width: 1.5;
 }
 
+/*
 .aboutmap path {
     stroke: #fff;
 }
+*/
 
 .about {
     width: 100%;
@@ -320,6 +322,10 @@ input {
     word-break: keep-all;
 }
 
+.answer1 p {
+    background: white;
+}
+
 .answer1 .eng {
     font-size: 17px;
 }
@@ -336,6 +342,22 @@ input {
 
 .answer2 .eng {
     line-height: 100%;
+}
+
+.answer3 {
+    display: none;
+    width: 100%;
+    padding: 100px 100px;
+    text-indent: 4em;
+    word-break: keep-all;
+}
+
+.answer3 p {
+    background: white;
+}
+
+.answer3 .eng {
+    font-size: 17px;
 }
 
 .credit {
@@ -417,17 +439,23 @@ input {
     top: 0;
     position: absolute;
     width: 100%;
-    height: auto;
-    padding: 70px 40px 7px 40px;
+    height: 100%;
+    padding: 0 40px 0px 40px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     z-index: 4;
+    overflow-y: scroll;
+    grid-column-gap: 40px;
 }
 
 .bigview {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 40px 40px 70px 0;
+    
 }
 
 .tnview {
@@ -436,6 +464,27 @@ input {
     display: grid;
     grid-template-rows: auto;
     grid-row-gap: 10px;
+    align-self: flex-start;
+    padding-top: 40px;
+}
+
+.big-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-row img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.big-row .big-long {
+    width: 52%;
+    height: auto;
 }
 
 .tn-row {
@@ -605,7 +654,7 @@ input {
     position: fixed;
     bottom: 0;
     height: 50px;
-    background: #00c3ff;
+    background: white;
     border-top: solid 1px #008c44;
     text-align: center;
     z-index: 997;
