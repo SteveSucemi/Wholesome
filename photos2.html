@@ -45,6 +45,12 @@
         </div>
 
         <div class="wrapper">
+            <div class="cityname">
+                <h1 style="font-size: 17vw; line-height: 80%;">
+                    Under<br>Construction!
+                </h1>
+
+            </div>
             <div class="map">
 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 3600 1568" style="enable-background:new 0 0 3600 1568;" xml:space="preserve">
@@ -4429,7 +4435,7 @@
 
             <div id="photoslider">
                 <div class="albums">
-                   <a href="albums/01swiss.html">
+                    <!--                   <a href="albums/01swiss.html">-->
                     <div class="album hasimage" data-image="https://i.imgur.com/szguVjb.jpg">
                         <div class="numbering">
                             <p>1</p>
@@ -4438,7 +4444,7 @@
                             <p>Switzerland</p>
                         </div>
                     </div>
-                    </a>
+                    <!--                    </a>-->
 
                     <div class="album hasimage" data-image="https://i.imgur.com/TFZJQkf.jpg">
                         <div class="numbering">
@@ -4502,7 +4508,7 @@
                             <p>Jeju</p>
                         </div>
                     </div>
-                    <a href="albums/09singapore.html">
+                    <!--                    <a href="albums/09singapore.html">-->
                     <div class="album hasimage" data-image="https://i.imgur.com/mL1UIhP.jpg">
                         <div class="numbering">
                             <p>9</p>
@@ -4511,7 +4517,7 @@
                             <p>Singapore</p>
                         </div>
                     </div>
-                    </a>
+                    <!--                    </a>-->
 
                     <div class="album hasimage" data-image="https://i.imgur.com/kAKTUQI.jpg">
                         <div class="numbering">
@@ -4582,8 +4588,7 @@
 
         <div class="thumbnails">
             <div id="thumbnail">
-                <img src="./img/thumbnail/fakethumbnail.png" 
-                data-src="./img/thumbnail/fakethumbnail.png" alt="">
+                <img src="./img/thumbnail/fakethumbnail.png" data-src="./img/thumbnail/fakethumbnail.png" alt="">
             </div>
         </div>
 
@@ -4611,6 +4616,8 @@
     </div>
 
 
+
+
     <script>
         $("#photoslider").on('mousewheel', function(e) {
             var wheelDelta = e.originalEvent.wheelDelta;
@@ -4626,19 +4633,37 @@
     </script>
 
     <script>
-  $(document).ready(function () {
-      $('.hasimage').on(
-          {
-            'mouseenter': function(e) {
-              $('#thumbnail img').attr('src', $(this).attr('data-image'));
-            },
-            'mouseleave': function(e) {
-              $('#thumbnail img').attr('src', $('#thumbnail img').attr('data-src'));
-            }
-          }
-      ); 
-  });
-</script>
+        $(document).ready(function() {
+            $('.hasimage').on({
+                'mouseenter': function(e) {
+                    $('#thumbnail img').attr('src', $(this).attr('data-image'));
+                },
+                'mouseleave': function(e) {
+                    $('#thumbnail img').attr('src', $('#thumbnail img').attr('data-src'));
+                }
+            });
+        });
+
+    </script>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5f8b2384fd4ff5477ea6ba9a/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+    </script>
+    <!--End of Tawk.to Script-->
+
 
 </body>
 
