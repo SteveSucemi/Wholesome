@@ -256,7 +256,7 @@ input {
     font-family: "Saol Light Italic", serif;
     font-style: italic;
     font-weight: 100;
-    color: white;
+    color: #008c44;
     filter: drop-shadow(0 3px 3px rgba(0, 140, 68, 1));
     white-space: normal;
 }
