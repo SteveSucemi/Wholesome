@@ -108,7 +108,6 @@ p {
     height: calc(100% - 49px);
     overflow-y: inherit;
     white-space: nowrap;
-/*    background: linear-gradient(to top, #00c3ff, #ffff1c);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,11 +250,22 @@ input {
     filter: drop-shadow(0 3px 3px rgba(0, 140, 68, 1));
 }
 
+.cityname  h3 {
+    margin: 0;
+    font-size: 8vw;
+    font-family: "Saol Light Italic", serif;
+    font-style: italic;
+    font-weight: 100;
+    color: white;
+    filter: drop-shadow(0 3px 3px rgba(0, 140, 68, 1));
+    white-space: normal;
+}
+
+
 .map {
     width: 100%;
     height: 100%;
     z-index: 2;
-
 }
 
 .map svg {
@@ -316,8 +326,8 @@ input {
 
 .answer1 {
     display: none;
-    width: 100%;
-    padding: 100px 100px;
+    width: 500px;
+    margin: auto;
     text-indent: 4em;
     word-break: keep-all;
 }
@@ -346,8 +356,8 @@ input {
 
 .answer3 {
     display: none;
-    width: 100%;
-    padding: 100px 100px;
+    width: 500px;
+    margin: auto;
     text-indent: 4em;
     word-break: keep-all;
 }
@@ -692,4 +702,47 @@ input {
     position: relative;
     top: 16px;
 
+}
+
+.mobile-notice {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 49px);
+    overflow-y: inherit;
+    white-space: nowrap;
+    display: flex;
+    z-index: 10;
+    display: none;
+}
+
+.mobile-notice .cityname {
+    top:50%;
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .mobile-notice {
+        display: block;
+    }
+    
+    .mobile-notice h3 {
+        
+    }
+    
+    .stickers{
+        display: none;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .map {
+        width: 90%;
+    }
+    
+    .map path {
+        stroke-width: 2;
+    }
 }
