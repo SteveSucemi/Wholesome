@@ -536,6 +536,7 @@ input {
 .album:hover {
     filter: drop-shadow(0 3px 3px rgba(0, 140, 68, 1));
     border: #fff solid 2px;
+    cursor: pointer;
 }
 
 .album:hover p {
