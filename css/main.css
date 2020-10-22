@@ -119,7 +119,7 @@ p {
     width: 100%;
     top: 16px;
     padding: 0 20px;
-    height: auto;
+    height: 0;
     position: fixed;
     text-align: center;
     z-index: 90000;
@@ -154,6 +154,7 @@ label {
 .nav-p {
     text-align: left;
     width: 25%;
+    height: 100%;
     font-family: "Saol Light Italic", serif;
     font-size: 2em;
     font-style: italic;
@@ -235,7 +236,7 @@ input {
 
 .cityname {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     text-align: center;
 }
@@ -454,7 +455,7 @@ input {
     display: grid;
     grid-template-columns: 3fr 1fr;
     z-index: 4;
-    overflow-y: scroll;
+    overflow-y: hidden;
     grid-column-gap: 40px;
 }
 
@@ -515,7 +516,7 @@ input {
     width: 33px;
 }
 
-.tn-row img:hover {
+.tn-row:hover img {
     cursor: pointer;
     filter: url(#green);
 }
